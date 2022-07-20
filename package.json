@@ -1,6 +1,6 @@
 {
   "name": "@losslessproject/testnet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "repository": "git@github.com:losslessproject/testnet.git",
   "author": "zkDAO <harmonyzku@gmail.com>",
@@ -35,6 +35,9 @@
     "setup:mumbai": "yarn deploy-mumbai ; yarn verify:mumbai ; yarn disburse mumbai ; yarn deposit mumbai",
     "setup:fuji": "yarn deploy-fuji ; yarn verify:fuji ; yarn disburse fuji ; yarn deposit fuji",
     "setup:harmony": "yarn deploy-harmony ; yarn verify:harmony ; yarn disburse harmony ; yarn deposit harmony"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@openzeppelin/contracts": "4.4.2",
