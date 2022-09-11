@@ -17,7 +17,7 @@ import { pushDraw1 } from '../src/pushDraw1';
 import { Contract, } from 'ethers';
 import { DeployResult } from 'hardhat-deploy/types';
 
-export default async function deployToRinkeby(hardhat: HardhatRuntimeEnvironment) {
+export default async function deployToHarmony(hardhat: HardhatRuntimeEnvironment) {
   if (process.env.DEPLOY === 'v1.1.0.harmony') {
     dim(`Deploying: Beacon Harmony`);
     dim(`Version: 1.1.0`);

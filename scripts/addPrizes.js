@@ -3,7 +3,6 @@ const hardhat = require("hardhat")
 const { ethers } = hardhat
 
 async function run() {
-
   const yieldSource = await ethers.getContract('MockYieldSource')
   const token = await ethers.getContractAt('@pooltogether/yield-source-interface/contracts/test/ERC20Mintable.sol:ERC20Mintable', (await yieldSource.depositToken()))
   const ticket = await ethers.getContract('Ticket')
@@ -27,7 +26,6 @@ async function run() {
   console.log(chalk.dim(`Depositing prizes...`))
   const depositTx = await prizePool.depositTo(prizeDistributor.address, amount)
   await depositTx.wait(1)
-
 }
 
 run()

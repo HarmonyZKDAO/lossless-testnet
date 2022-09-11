@@ -59,6 +59,13 @@ if (!!avalanche) {
 
 if (mnemonic) {
   networks.harmony = {
+    chainId: 1666600000,
+    url: 'https://api.harmony.one/',
+    accounts: {
+      mnemonic,
+    },
+  };
+  networks.harmonyDevnet = {
     chainId: 1666900000,
     url: 'https://api.s0.ps.hmny.io/',
     accounts: {
