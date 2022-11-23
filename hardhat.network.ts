@@ -57,6 +57,45 @@ if (!!avalanche) {
   };
 }
 
+if (infuraApiKey && mnemonic) {
+  networks.kovan = {
+    url: `https://kovan.infura.io/v3/${infuraApiKey}`,
+    accounts: {
+      mnemonic,
+    },
+  };
+
+  networks.ropsten = {
+    url: `https://ropsten.infura.io/v3/${infuraApiKey}`,
+    accounts: {
+      mnemonic,
+    },
+  };
+
+  networks.rinkeby = {
+    chainId: 4,
+    url: `https://rinkeby.infura.io/v3/${infuraApiKey}`,
+    accounts: {
+      mnemonic,
+    },
+  };
+
+  networks.goerli = {
+    chainId: 5,
+    url: `https://goerli.infura.io/v3/${infuraApiKey}`,
+    accounts: {
+      mnemonic,
+    },
+  };
+
+  networks.mainnet = {
+    url: alchemyUrl,
+    accounts: {
+      mnemonic,
+    },
+  };
+} 
+
 if (mnemonic) {
   networks.harmony = {
     chainId: 1666600000,
@@ -109,47 +148,8 @@ if (mnemonic) {
     },
   };
   networks.polygonMumbai = networks.mumbai;
-}
-
-if (infuraApiKey && mnemonic) {
-  networks.kovan = {
-    url: `https://kovan.infura.io/v3/${infuraApiKey}`,
-    accounts: {
-      mnemonic,
-    },
-  };
-
-  networks.ropsten = {
-    url: `https://ropsten.infura.io/v3/${infuraApiKey}`,
-    accounts: {
-      mnemonic,
-    },
-  };
-
-  networks.rinkeby = {
-    chainId: 4,
-    url: `https://rinkeby.infura.io/v3/${infuraApiKey}`,
-    accounts: {
-      mnemonic,
-    },
-  };
-
-  networks.goerli = {
-    chainId: 5,
-    url: `https://goerli.infura.io/v3/${infuraApiKey}`,
-    accounts: {
-      mnemonic,
-    },
-  };
-
-  networks.mainnet = {
-    url: alchemyUrl,
-    accounts: {
-      mnemonic,
-    },
-  };
 } else {
-  console.warn('No infura or hdwallet available for testnets');
+  console.warn('No hdwallet available for testnets');
 }
 
 export default networks;

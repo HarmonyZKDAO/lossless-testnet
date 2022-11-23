@@ -1,5 +1,5 @@
 # Used to deploy to testnets
-export HDWALLET_MNEMONIC=''
+export HDWALLET_MNEMONIC='process clarify tool alien recycle chief beauty sphere badge column gesture satoshi'
 
 # Used to deploy to testnets
 export INFURA_API_KEY=''
