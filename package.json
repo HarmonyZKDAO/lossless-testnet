@@ -24,21 +24,25 @@
     "deploy:fuji": "DEPLOY=v1.1.0.fuji hardhat deploy --network fuji",
     "deploy:harmony": "DEPLOY=v1.1.0.harmony hardhat deploy --network harmony",
     "deploy:harmonyDevnet": "DEPLOY=v1.1.0.harmony-devnet hardhat deploy --network harmonyDevnet",
+    "deploy:harmonyTestnet": "DEPLOY=v1.1.0.harmonyTestnet hardhat deploy --network harmonyTestnet",
     "node:rinkeby": "DEPLOY=v1.1.0.rinkeby hardhat node --network hardhat",
     "node:mumbai": "DEPLOY=v1.1.0.mumbai hardhat node --network hardhat",
     "node:harmony": "DEPLOY=v1.1.0.harmony hardhat node --network hardhat",
     "node:harmonyDevnet": "DEPLOY=v1.1.0.harmony-devnet hardhat node --network harmonyDevnet",
+    "node:harmonyTestnet": "DEPLOY=v1.1.0.harmonyTestnet hardhat node --network harmonyTestnet",
     "node:fuji": "DEPLOY=v1.1.0.fuji hardhat node --network hardhat",
     "verify:rinkeby": "hardhat --config hardhat.config.ts run ./scripts/verify.ts --network rinkeby",
-    "verify:mumbai": "hardhat --config hardhat.config.polygon.ts run ./scripts/verify.ts --network mumbai",
+    "verify:mumbai": "hardhat --config hardhat.config.po`lygon.ts run ./scripts/verify.ts --network mumbai",
     "verify:fuji": "hardhat --config hardhat.config.avalanche.ts run ./scripts/verify.ts --network fuji",
     "verify:harmony": "hardhat --config hardhat.config.harmony.ts run ./scripts/verify.ts --network harmony",
     "verify:harmonyDevnet": "hardhat --config hardhat.config.harmony.ts run ./scripts/verify.ts --network harmonyDevnet",
+    "verify:harmonyTestnet": "hardhat --config hardhat.config.harmony.ts run ./scripts/verify.ts --network harmonyTestnet",
     "setup:rinkeby": "yarn deploy-rinkeby ; yarn verify-rinkeby ; yarn disburse rinkeby ; yarn deposit rinkeby",
     "setup:mumbai": "yarn deploy-mumbai ; yarn verify:mumbai ; yarn disburse mumbai ; yarn deposit mumbai",
     "setup:fuji": "yarn deploy-fuji ; yarn verify:fuji ; yarn disburse fuji ; yarn deposit fuji",
     "setup:harmony": "yarn deploy:harmony ; yarn verify:harmony ; yarn disburse harmony ; yarn deposit harmony",
-    "setup:harmonyDevnet": "yarn deploy-harmonyDevnet ; yarn verify:harmonyDevnet ; yarn disburse harmonyDevnet ; yarn deposit harmonyDevnet"
+    "setup:harmonyDevnet": "yarn deploy-harmonyDevnet ; yarn verify:harmonyDevnet ; yarn disburse harmonyDevnet ; yarn deposit harmonyDevnet",
+    "setup:harmonyTestnet": "yarn deploy:harmonyTestnet ; yarn disburse harmonyTestnet ; yarn deposit harmonyTestnet"
   },
   "publishConfig": {
     "access": "public"
