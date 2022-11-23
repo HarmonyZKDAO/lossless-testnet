@@ -1,8 +1,9 @@
 const fs = require("fs");
 
 const harmonyDeployments = `${__dirname}/../deployments/harmony`;
+const harmonyTestnetDeployments = `${__dirname}/../deployments/harmonyTestnet`;
 
-const networkDeploymentPaths = [harmonyDeployments];
+const networkDeploymentPaths = [harmonyDeployments,harmonyTestnetDeployments];
 
 const CURRENT_VERSION = {
   major: 1,
@@ -11,7 +12,7 @@ const CURRENT_VERSION = {
 };
 
 const contractList = {
-  name: "Testnet Linked Prize Pool",
+  name: "Linked Prize Pool",
   version: CURRENT_VERSION,
   tags: {},
   contracts: [],

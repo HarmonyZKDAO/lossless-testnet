@@ -25,6 +25,7 @@ const config: HardhatUserConfig = {
       mumbai: '0xbCE45a1C2c1eFF18E77f217A62a44f885b26099f', // Polygon (Mumbai) Defender Relayer
       fuji: '0x2d38318C873b7965Ff3cB660461b04561CC487d1', // Avalanche (Fuji) Defender Relayer
       harmony: '0xef5efaecd6c11b42ee17e55329122da5b3db4899', // Harmony Defender Relayer
+      harmonyTestnet: '0x4c7dc4de9e45699946f18bfe65be5aa7eba44964', // Harmony Defender Relayer
     },
   },
   solidity: {
