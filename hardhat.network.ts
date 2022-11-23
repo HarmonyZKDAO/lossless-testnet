@@ -46,7 +46,7 @@ if (!!avalanche) {
     accounts: {
       mnemonic,
     },
-  }
+  };
 
   networks.fuji = {
     chainId: 43113,
@@ -54,7 +54,7 @@ if (!!avalanche) {
     accounts: {
       mnemonic,
     },
-  }
+  };
 }
 
 if (mnemonic) {
@@ -68,6 +68,13 @@ if (mnemonic) {
   networks.harmonyDevnet = {
     chainId: 1666900000,
     url: 'https://api.s0.ps.hmny.io/',
+    accounts: {
+      mnemonic,
+    },
+  };
+  networks.harmonyTestnet = {
+    chainId: 1666700000,
+    url: 'https://api.s0.b.hmny.io',
     accounts: {
       mnemonic,
     },
@@ -101,7 +108,7 @@ if (mnemonic) {
       mnemonic,
     },
   };
-  networks.polygonMumbai = networks.mumbai
+  networks.polygonMumbai = networks.mumbai;
 }
 
 if (infuraApiKey && mnemonic) {
