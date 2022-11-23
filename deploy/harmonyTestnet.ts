@@ -19,7 +19,7 @@ import { DeployResult } from 'hardhat-deploy/types';
 
 export default async function deployToHarmony(hardhat: HardhatRuntimeEnvironment) {
   if (process.env.DEPLOY === 'v1.1.0.harmonyTestnet') {
-    dim(`Deploying: Beacon Harmony`);
+    dim(`Deploying: Beacon Harmony Testnet`);
     dim(`Version: 1.1.0`);
   } else {
     return;
