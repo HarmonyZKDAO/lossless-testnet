@@ -1,6 +1,6 @@
 {
   "name": "@losslessproject/testnet",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "main": "index.js",
   "repository": "git@github.com:losslessproject/testnet.git",
   "author": "zkDAO <harmonyzku@gmail.com>",
